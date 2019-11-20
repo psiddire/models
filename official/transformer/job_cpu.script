@@ -1,0 +1,11 @@
+#!/bin/csh
+
+#$ -M psiddire@nd.edu # Email address for job notification
+#$ -m abe # Send mail when job begins, ends and aborts
+#$ -pe mpi-24 24 # Specify parallel environment and legal core size
+#$ -q debug # Specify queue
+#$ -N data_download         # Specify job name
+
+module load tensorflow         # Required modules
+
+python 
